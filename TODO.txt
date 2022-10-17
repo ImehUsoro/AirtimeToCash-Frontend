@@ -1,0 +1,10 @@
+- Add loading spinner to dashboard
+- default messages for when there are no transactions or withdrawals
+- Write tests for frontend
+- remove react time ago and switch to timeago- react inside
+- Host on heroku & netlify
+- Add a favicon
+- Add a logo
+- Add a 404 page
+- transaction history should be sorted by updated at
+- TESTING INTEGRATIONS INCLUSION.

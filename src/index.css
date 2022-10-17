@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,300;0,600;0,700;1,300&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+
+
+  --gradient-iphone: linear-gradient(108.97deg,#d9e9ba 1.84%, #a98dcfe3 80.67%);
+  --gradient-button: linear-gradient(107.45deg, #DE3D6D 47.58%, #F5844C 104.23%)
+
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+  --color-btn: #1877f2;
+  --color-complement: rgb(188, 191, 200);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  /* background-color: #e5e5e5; */
+}
+
+@media screen and (max-width: 550px) { 
+  body {
+    overflow-x: hidden;
+  }
+}
+
