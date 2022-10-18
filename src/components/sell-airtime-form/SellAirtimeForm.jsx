@@ -13,6 +13,7 @@ const SellAirtimeForm = () => {
 
   const [formData, setFormData] = useState({});
   const [copiedModal, setCopiedModal] = useState(false);
+  const [secCopiedModal, setSecCopiedModal] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -174,6 +175,7 @@ const SellAirtimeForm = () => {
                 >
                   <div className="copy-to-clipboard">
                     <TbCopy size={"24px"} />
+                    {copiedModal && <p className="copy-modal">copied</p>}
                   </div>
                 </CopyToClipboard>
               )
@@ -262,16 +264,16 @@ const SellAirtimeForm = () => {
                   : process.env.REACT_APP_9MOBILE_NUMBER
               }
               onCopy={() => {
-                setCopiedModal(true);
+                setSecCopiedModal(true);
                 setTimeout(() => {
-                  setCopiedModal(false);
+                  setSecCopiedModal(false);
                 }, 300);
                 clearTimeout();
               }}
             >
               <div className="copy-to-clipboard">
                 <TbCopy size={"24px"} />
-                {copiedModal && <p className="copy-modal">copied</p>}
+                {secCopiedModal && <p className="copy-modal">copied</p>}
               </div>
             </CopyToClipboard>
           )}
