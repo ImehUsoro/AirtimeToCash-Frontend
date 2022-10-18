@@ -54,7 +54,7 @@ const TransactionsTable = () => {
                     <TD>{transaction.User.email}</TD>
                     <TD>{transaction.User.phoneNumber}</TD>
                     <TD>{transaction.amountToSell}</TD>
-                    <TD>{transaction.amountToReceive}</TD>
+                    <TD>{transaction.amountToReceive.toFixed(2)}</TD>
                     <TD>{transaction.network}</TD>
                     <TD status={transaction.status}>{transaction.status}</TD>
                   </TR>

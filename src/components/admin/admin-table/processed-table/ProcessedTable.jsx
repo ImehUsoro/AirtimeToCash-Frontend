@@ -58,7 +58,7 @@ const ProcessedTable = () => {
                     <TD>{transaction.createdAt.slice(2, 10)}</TD>
                     <TD>{transaction.phoneNumber}</TD>
                     <TD>{transaction.amountToSell}</TD>
-                    <TD>{transaction.amountToReceive}</TD>
+                    <TD>{transaction.amountToReceive.toFixed(2)}</TD>
                     <TD>{transaction.network}</TD>
                     <TD>{transaction.editedBy}</TD>
                     <TD status={transaction.status}>{transaction.status}</TD>

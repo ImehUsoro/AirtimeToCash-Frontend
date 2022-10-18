@@ -327,7 +327,7 @@ const Admin = () => {
               type="number"
               id="amount-receive"
               placeholder="Amount receive"
-              defaultValue={currentTransaction.amountToSell * 0.7}
+              defaultValue={(currentTransaction.amountToSell * 0.7).toFixed(2)}
               key={currentTransaction.amountToSell}
               readOnly
               name="amountToReceive"
