@@ -31,7 +31,7 @@ const SuccessModal = () => {
     <SuccessModalStyle>
       <div className="modal-content" ref={wrapperRef}>
         <img src={logo} alt="success" />
-        <h2 className="main-txt">Bank Account Successful</h2>
+        <h2 className="main-txt">Account Successfully Added</h2>
         <p className="second-text">
           Your bank account has been added successfully
         </p>
