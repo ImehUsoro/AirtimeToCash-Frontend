@@ -23,7 +23,12 @@ const WalletBalance = () => {
     <WalletBalanceStyle>
       <p className="balance-text">Wallet balance</p>
       <p className="amount">
-        ₦{singleUser?.walletBalance === 0 ? "0.00" : balance}
+        ₦
+        {singleUser?.walletBalance === 0
+          ? "0.00"
+          : balance?.toString().split(".").length === 1
+          ? `${balance?.toString()}.00`
+          : balance}
       </p>
       <div className="account-active">
         <p className="active-text">Account is active</p>
