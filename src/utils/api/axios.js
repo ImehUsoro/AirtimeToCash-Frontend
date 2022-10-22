@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseUrl = "https://airtimetocashpodg.herokuapp.com";
+const baseUrl = process.env.REACT_APP_PORT;
+// const baseUrl = "https://airtimetocashpodg.herokuapp.com";
 export const apiGet = (path, conf = {}, auth = true) => {
   const config = {
     ...conf,
